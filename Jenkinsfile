@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install --verbose --user --build /Users/robrob/tmp/ -r requirements.txt'
+        sh 'python3.7 -m pip install --verbose --user --build /Users/robrob/tmp/ -r requirements.txt'
       }
     }
     stage('test') {
