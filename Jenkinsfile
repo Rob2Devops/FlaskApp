@@ -1,7 +1,7 @@
 pipeline {
   agent { 
     docker {
-      args '-u robrob:staff' 
+      args '-u 501:20' 
 	  image 'python:3.7.2' 
     } 
   }
