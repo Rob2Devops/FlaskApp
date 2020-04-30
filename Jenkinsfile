@@ -1,5 +1,10 @@
 pipeline {
-  agent { docker { image 'python:3.7.2' } }
+  agent { 
+    docker {
+      args '-u robrob:staff' 
+	  image 'python:3.7.2' 
+    } 
+  }
   stages {
     stage('build') {
       steps {
