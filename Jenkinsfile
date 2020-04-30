@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install --user --cache-dir /Users/robrob/tmp/ -r requirements.txt'
+        sh 'pip install --verbose --user --cache-dir /Users/robrob/tmp/ -r requirements.txt'
       }
     }
     stage('test') {
